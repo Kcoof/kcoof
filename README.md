@@ -17,8 +17,6 @@ Currently targeting advanced cybersecurity roles in Saudi Arabia while developin
 
 ---
 
-## 🚀 Core Expertise
-
 ### 🔐 Offensive Security
 - Advanced Web Application Penetration Testing
 - OWASP Top 10 Exploitation & Mitigation
@@ -122,14 +120,3 @@ The future belongs to:
 
 My mission is to engineer systems that think like attackers — but operate at machine speed.
 
----
-
-## 📫 Contact
-
-- 💼 LinkedIn: (Add Your LinkedIn Here)
-- 🌐 Organization: SamTechnology
-- 📧 Email: (Add Professional Email)
-
----
-
-⭐ "Security is not a product. It’s a continuous intelligent process."
