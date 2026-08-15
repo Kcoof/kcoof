@@ -45,21 +45,40 @@ Currently targeting advanced cybersecurity roles in Saudi Arabia while developin
 
 ---
 
-## 🏗 Featured Projects
+## 🏗 Featured Projects — The Bug Bounty Toolkit
 
-### 🤖 AI Offensive Security Framework
-A research-driven framework that:
-- Automates reconnaissance
-- Maps attack surfaces
-- Identifies vulnerability patterns
-- Generates structured technical reports
+An end-to-end recon → scan → report pipeline:
 
-### 🔍 Advanced Recon Engine
-A scalable intelligence system designed to:
-- Aggregate multi-source search data
-- Automate dork-based discovery
-- Extract endpoints & APIs
-- Assist penetration testing workflows
+```
+SUBenum ──► xss (mass pre-filter) ──► secscan ──► HTML/Markdown reports
+   │                                         ▲
+   └── wordlist (1M+ subdomains/params) ─────┘
+```
+
+### 🔎 [secscan](https://github.com/Kcoof/security-scanner)
+Modular web vulnerability scanner — crawling, hidden-parameter mining,
+context-aware XSS, three-mode SQLi (error/boolean/time), open redirect, CORS,
+CRLF, Host-header injection, blind OOB detection via Interactsh, DOM XSS,
+authenticated scanning, and HTML/Markdown/JSON reporting with CWE mapping.
+Verified by a 15-check automated test suite.
+
+### 🌐 [SUBenum](https://github.com/Kcoof/SUBenum)
+Subdomain enumeration in Go — 5 passive sources (crt.sh, Wayback,
+HackerTarget, urlscan, OTX), optional subfinder/amass integration, DNS
+bruteforce with wildcard detection, and alive-host probing that outputs
+secscan-ready URLs.
+
+### ⚡ [xss](https://github.com/Kcoof/Xss)
+Go-based mass XSS reflection pre-filter — injects probes into FUZZ placeholders
+or every parameter across huge URL lists, pipe-friendly, built for speed.
+
+### 🛡️ [SentinelDork](https://github.com/Kcoof/sentineldork)
+AI-assisted Google dorking toolkit for exposed-asset discovery, with a
+serverless-secured Gemini proxy (API keys never reach the browser).
+
+### 📚 [wordlist](https://github.com/Kcoof/wordlist)
+Curated 1M+ entry collection: subdomains, parameter names, directories, API
+paths, backup files — wired into the toolkit via `-w` / `--params-file`.
 
 ### 📊 AI-Based Analytical Systems
 Research and development of intelligent automation systems for:
